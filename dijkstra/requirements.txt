@@ -1,0 +1,4 @@
+pptree
+pandas
+numpy
+jupyterlab
