@@ -1,7 +1,5 @@
-## Introduction to Graph Theory
-Code for practical sessions. 
-### <a name="Members" id="member"></a> Group members
-
+# Graph Theory Project
+## Team members
 * Do Duy Huy Hoang
 * Pham Thi Ngoc Mai
 * Doan Lien Huong
@@ -9,42 +7,34 @@ Code for practical sessions.
 * Pham Phan Bach
 * Vu Khanh Huyen
 
-### Table of Content
-> [Members](#member)
->
-> [Dependencies](#dependencies)
->
-> [Usage](#usage)
+## Overview
+- Our code is organized in two files:
+  * `graph.py`: definition of the class Graph along with graph-related functions
+  * `tree.py`: definition of the class Tree along with tree traversal functions
 
-### <a name="Dependencies" id="dependencies"></a> Dependencies
-`Bash >= 4`
+- Implemented functions: 
+1. degree
+2. neighbors
+3. components
+4. path
+5. spanning_tree 6. prim
+7. kruskal
+8. dijkstra
+9. shortest_path
+10. preorder
+11. postorder
 
-For those who are using bash with version older than 4, head down to [this section](#bonus). \
-You can check your bash current version with `bash --version` command.
+- For more informations, you can head down to this report at `/docs/Report.pdf`
 
-### <a name="Usage" id="usage"></a> Usage
-
-**Building**
-Before building the code, you might want to change the **path to the data file inside `ex5-Graph2Tree.cpp`** 
+## Setup
+Create a python environment using conda and the `environment.yaml` file:
+```bash
+conda env create --file=environment.yml
+```
+All analysis steps are provided in more detail in the `Report.ipynb` jupyter notebook. Run it with the following command from the source folder:
 
 ```bash
-  chmod +x gen.sh
-  bash gen.sh
-```
-**Usage Example**
-```bash
-  ./ex5-Graph2Tree.o $i
+jupyter notebook
 ```
 
-- Where $i is the vertex you want to find the degree.
-
-**Usage Example**
-```bash
-  ./ex5-Graph2Tree.o 2
-```
-
-This script will compile all the source codes and generate objects file to be compiled into an application.
-
-### <a name="bonus" id="bonus"></a> Bonus
-
-For those who are using bash with version older than 4. You can compile the source code manually with `make $i` - where `$i` is the file you want to compile.
+If you are not using any python environment, you need to install some python packages in `requirements.txt` file  
